@@ -18,12 +18,12 @@ const config={
         dist:DIST_DIR+'assets'
     },
     style:{
-        src:SRC_DIR+'style/*.less',  //如果是scss或者css，就改对应的
+        src:SRC_DIR+'css/**/*.scss',  //如果是scss或者css，就改对应的
         dev:DEV_DIR+'css',
         dist:DIST_DIR+'css'
     },
     script:{
-        src:SRC_DIR+'script/*.js',
+        src:SRC_DIR+'js/**/*.js',
         dev:DEV_DIR+'js',
         dist:DIST_DIR+'js'
     },
