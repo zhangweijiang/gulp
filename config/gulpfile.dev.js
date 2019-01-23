@@ -29,7 +29,7 @@ function dev(){
     gulp.task('copy:dev', function () {
         gulp.src( config.src + '**/*.!(jpg|jpeg|png|gif|bmp|scss|js|html|tpl)')
         .pipe($.contribCopy())
-        .pipe(gulp.dest(config.dist));
+        .pipe(gulp.dest(config.dev));
     });
 
    

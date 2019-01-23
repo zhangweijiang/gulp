@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--浏览器兼容es6基本语法,ie9以下不兼容，browser里面isArray再ie8是不兼容的-->
+    <script src="./js/browser.min.js"></script>
+    <!--IE浏览器兼容ES6（set,map,promise等语法）-->
+    <script type="text/javascript" src="./js/browser-polyfill.min.js"></script>
+
+    <script type="text/babel">
+        //需引入browser-polyfill.min.js，不然ie11是undifined，ie10及以下直接报错
+        var m = new Map([['micheal',99],['bob',90],['baobao',100]]);
+        alert(m.get('micheal'));
+
+        //在不引入browser.min.js时候只兼容ie11
+        let a= 3;
+        alert(a);
+
+        //在不引入browser.min.js时候ie11也不兼容
+        var log = () => {
+            alert('no param')
+        }
+        log();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
