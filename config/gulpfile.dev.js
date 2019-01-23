@@ -20,7 +20,7 @@ function dev(){
         .pipe(gulp.dest(config.style.dev));
     });
     gulp.task('script:dev',function(){
-        return gulp.src(config.script.src).pipe($.babel()).pipe($.babel()).pipe(gulp.dest(config.script.dev));
+        return gulp.src(config.script.src).pipe($.babel()).pipe(gulp.dest(config.script.dev));
     });
     gulp.task('img:dev',function(){
         return gulp.src(config.img.src).pipe($.imagemin()).pipe(gulp.dest(config.img.dev));
